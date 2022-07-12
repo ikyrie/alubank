@@ -15,7 +15,7 @@ class ActionsSection extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
-                  child: Text('Section Title'),
+                  child: Text('Account Actions'),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
