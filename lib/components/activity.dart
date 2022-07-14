@@ -7,16 +7,20 @@ class Activity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
-          child: mainIcon,
-        ),
-        Text(
-          cardTitle,
-        ),
-      ],
+    return Container(
+      width: 70,
+      child: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8.0),
+            child: mainIcon,
+          ),
+          Text(
+            cardTitle,
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
     );
   }
 }

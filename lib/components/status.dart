@@ -6,6 +6,7 @@ class AccountStatus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -19,12 +20,11 @@ class AccountStatus extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Spent',
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 4.0),
+                      child: Text('Spent', style: Theme.of(context).textTheme.labelLarge,),
                     ),
-                    Text(
-                      '\$9900.97',
-                    ),
+                    Text('\$9900.97', style: Theme.of(context).textTheme.bodyLarge,),
                   ],
                 ),
               ],
@@ -38,15 +38,33 @@ class AccountStatus extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Earned',
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 4.0),
+                      child: Text('Earned', style: Theme.of(context).textTheme.labelLarge,),
                     ),
-                    Text(
-                      '\$9332.35',
-                    ),
+                    Text('\$9332.35', style: Theme.of(context).textTheme.bodyLarge,),
                   ],
                 ),
               ],
+            ),
+          ],
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
+          child: Text('Spending Limit: \$432.93'),
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                clipBehavior: Clip.hardEdge,
+                child: LinearProgressIndicator(
+                  value: 0.3,
+                  semanticsLabel: 'Current points',
+                  minHeight: 8,
+                ),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+              ),
             ),
           ],
         ),

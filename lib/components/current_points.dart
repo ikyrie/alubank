@@ -16,32 +16,23 @@ class _AccountPointsState extends State<AccountPoints> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(bottom: 16.0),
-              child: Text.rich(
-                TextSpan(
-                  text: 'Total points: ',
-                  children: <TextSpan>[
-                    TextSpan(text: '3000', style: TextStyle(fontSize: 24),),
-                  ],
-                ),
-              ),
-            ),
-            Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    clipBehavior: Clip.hardEdge,
-                    child: LinearProgressIndicator(
-                      value: 0.3,
-                      semanticsLabel: 'Current points',
-                      minHeight: 8,
-                    ),
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 4.0),
+                  child: Text(
+                    'Total points:',
+                    style: Theme.of(context).textTheme.labelLarge,
                   ),
                 ),
+                Text(
+                  '3000',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
               ],
-            )
+            ),
+            
           ],
         ),
         Padding(
@@ -56,10 +47,43 @@ class _AccountPointsState extends State<AccountPoints> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(bottom: 16.0),
-              child: Text('Milestones:',),
+              child: Text('Milestones:', style: Theme.of(context).textTheme.titleLarge,),
             ),
-            Text('Free delivery: 15000pts'),
-            Text('Cashback: start 30000pts'),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8.0),
+                    child: Container(
+                      width: 8,
+                      height: 8,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.pink,
+                      ),
+                    ),
+                  ),
+                  Text('Free delivery: 15000pts'),
+                ],
+              ),
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: Container(
+                    width: 8,
+                    height: 8,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                      color: Colors.indigo,
+                    ),
+                  ),
+                ),
+                Text('1 month streaming: 30000pts'),
+              ],
+            ),
           ],
         ),
       ],

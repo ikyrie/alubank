@@ -15,7 +15,7 @@ class ActionsSection extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
-                  child: Text('Account Actions'),
+                  child: Text('Account Actions', style: Theme.of(context).textTheme.titleLarge,),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -24,25 +24,25 @@ class ActionsSection extends StatelessWidget {
                       boxCardBody:
                           Activity(
                           mainIcon: Icon(
-                            Icons.addchart,
+                            Icons.account_balance_wallet,
                           ),
-                          cardTitle: 'ABC'),
+                          cardTitle: 'Deposit'),
                     ),
                     BoxCard(
                       boxCardBody:
                           Activity(
                           mainIcon: Icon(
-                            Icons.addchart,
+                            Icons.cached,
                           ),
-                          cardTitle: 'ABC'),
+                          cardTitle: 'Transfer'),
                     ),
                     BoxCard(
                       boxCardBody:
                           Activity(
                           mainIcon: Icon(
-                            Icons.addchart,
+                            Icons.center_focus_strong,
                           ),
-                          cardTitle: 'ABC'),
+                          cardTitle: 'Scan'),
                     ),
                   ],
                 ),
