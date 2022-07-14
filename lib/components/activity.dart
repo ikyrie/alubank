@@ -15,9 +15,6 @@ class Activity extends StatelessWidget {
         ),
         Text(
           cardTitle,
-          style: TextStyle(
-            color: Theme.of(context).colorScheme.onSecondaryContainer,
-          ),
         ),
       ],
     );

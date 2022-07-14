@@ -1,24 +1,47 @@
 import 'package:flutter/material.dart';
 
-class AccountPoints extends StatelessWidget {
+class AccountPoints extends StatefulWidget {
   const AccountPoints({Key? key}) : super(key: key);
 
   @override
+  State<AccountPoints> createState() => _AccountPointsState();
+}
+
+class _AccountPointsState extends State<AccountPoints> {
+  @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              '9900',
-              style: TextStyle(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16.0),
+              child: Text.rich(
+                TextSpan(
+                  text: 'Total points: ',
+                  children: <TextSpan>[
+                    TextSpan(text: '3000', style: TextStyle(fontSize: 24),),
+                  ],
+                ),
+              ),
             ),
-            Text('9332',
-            style: TextStyle(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer),
-            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    clipBehavior: Clip.hardEdge,
+                    child: LinearProgressIndicator(
+                      value: 0.3,
+                      semanticsLabel: 'Current points',
+                      minHeight: 8,
+                    ),
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
         Padding(
@@ -31,12 +54,12 @@ class AccountPoints extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              'Lorem ipsum some words that i dont even know what i am writing. But i have to put something here to test.',
-              style: TextStyle(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16.0),
+              child: Text('Milestones:',),
             ),
-            TextButton(onPressed: () => {}, child: Text('This is a button')),
+            Text('Free delivery: 15000pts'),
+            Text('Cashback: start 30000pts'),
           ],
         ),
       ],

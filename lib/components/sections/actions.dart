@@ -25,9 +25,6 @@ class ActionsSection extends StatelessWidget {
                           Activity(
                           mainIcon: Icon(
                             Icons.addchart,
-                            color: Theme.of(context)
-                                .colorScheme
-                                .onSecondaryContainer,
                           ),
                           cardTitle: 'ABC'),
                     ),
@@ -36,9 +33,6 @@ class ActionsSection extends StatelessWidget {
                           Activity(
                           mainIcon: Icon(
                             Icons.addchart,
-                            color: Theme.of(context)
-                                .colorScheme
-                                .onSecondaryContainer,
                           ),
                           cardTitle: 'ABC'),
                     ),
@@ -47,9 +41,6 @@ class ActionsSection extends StatelessWidget {
                           Activity(
                           mainIcon: Icon(
                             Icons.addchart,
-                            color: Theme.of(context)
-                                .colorScheme
-                                .onSecondaryContainer,
                           ),
                           cardTitle: 'ABC'),
                     ),

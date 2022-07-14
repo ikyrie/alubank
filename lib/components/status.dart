@@ -21,13 +21,9 @@ class AccountStatus extends StatelessWidget {
                   children: [
                     Text(
                       'Spent',
-                      style: TextStyle(
-                          color: Theme.of(context).colorScheme.onSecondaryContainer),
                     ),
                     Text(
                       '\$9900.97',
-                      style: TextStyle(
-                          color: Theme.of(context).colorScheme.onSecondaryContainer),
                     ),
                   ],
                 ),
@@ -44,13 +40,9 @@ class AccountStatus extends StatelessWidget {
                   children: [
                     Text(
                       'Earned',
-                      style: TextStyle(
-                          color: Theme.of(context).colorScheme.onSecondaryContainer),
                     ),
                     Text(
                       '\$9332.35',
-                      style: TextStyle(
-                          color: Theme.of(context).colorScheme.onSecondaryContainer),
                     ),
                   ],
                 ),
@@ -70,8 +62,6 @@ class AccountStatus extends StatelessWidget {
           children: <Widget>[
             Text(
               'This month you spent \$1500.00 on narguinhas. Try to make it lower!',
-              style: TextStyle(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer),
             ),
             TextButton(onPressed: () => {}, child: Text('Tell me more')),
           ],

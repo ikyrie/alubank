@@ -1,6 +1,6 @@
 import 'package:estilizacao_componentes/components/sections/actions.dart';
 import 'package:estilizacao_componentes/components/sections/header.dart';
-import 'package:estilizacao_componentes/components/sections/ponts_exchange.dart';
+import 'package:estilizacao_componentes/components/sections/points_exchange.dart';
 import 'package:estilizacao_componentes/components/sections/recent_activities.dart';
 import 'package:flutter/material.dart';
 
