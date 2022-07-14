@@ -14,7 +14,7 @@ class BoxCard extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.all(Radius.circular(5),),
+        borderRadius: BorderRadius.all(Radius.circular(12),),
         boxShadow: kElevationToShadow[2],
       ),
     );

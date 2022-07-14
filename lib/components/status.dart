@@ -10,14 +10,51 @@ class AccountStatus extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(
-              '9900',
-              style: TextStyle(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: Container(height: 10, width: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: Colors.yellow[800]),),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Spent',
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSecondaryContainer),
+                    ),
+                    Text(
+                      '\$9900.97',
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSecondaryContainer),
+                    ),
+                  ],
+                ),
+              ],
             ),
-            Text('9332',
-            style: TextStyle(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: Container(height: 10, width: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: Colors.purple[400]),),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Earned',
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSecondaryContainer),
+                    ),
+                    Text(
+                      '\$9332.35',
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSecondaryContainer),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ],
         ),
@@ -32,11 +69,11 @@ class AccountStatus extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Lorem ipsum some words that i dont even know what i am writing. But i have to put something here to test.',
+              'This month you spent \$1500.00 on narguinhas. Try to make it lower!',
               style: TextStyle(
                   color: Theme.of(context).colorScheme.onSecondaryContainer),
             ),
-            TextButton(onPressed: () => {}, child: Text('This is a button')),
+            TextButton(onPressed: () => {}, child: Text('Tell me more')),
           ],
         ),
       ],

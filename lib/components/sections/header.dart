@@ -17,16 +17,17 @@ class Header extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('1000,00'),
-                  Text('Account balance'),
+                  Text.rich(TextSpan(
+                      text: '\$',
+                      children: <TextSpan>[TextSpan(text: '1000.00', style: TextStyle(fontSize: 30))],
+                    ),
+                  ),
+                  Text('Available balance'),
                 ],
               ),
-              Flexible(
-                flex: 1,
-                child: Icon(
-                  Icons.favorite,
-                  size: 42,
-                ),
+              Icon(
+                Icons.account_circle,
+                size: 42,
               ),
             ],
           ),
