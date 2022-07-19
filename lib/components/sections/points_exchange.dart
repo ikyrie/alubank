@@ -17,7 +17,7 @@ class PointsExchange extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
                   child: Text('Account Points', style: Theme.of(context).textTheme.titleLarge,),
                 ),
-                BoxCard(boxCardBody: AccountPoints()),
+                const BoxCard(boxCardBody: AccountPoints()),
               ],
             ),
           );

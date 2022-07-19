@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: [
+          children: const <Widget>[
             Header(),
             RecentActivity(),
             ActionsSection(),

@@ -49,27 +49,27 @@ class AccountStatus extends StatelessWidget {
             ),
           ],
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 16.0, bottom: 8.0),
+        const Padding(
+          padding: EdgeInsets.only(top: 16.0, bottom: 8.0),
           child: Text('Spending Limit: \$432.93'),
         ),
         Row(
-          children: [
+          children: <Widget>[
             Expanded(
               child: Container(
                 clipBehavior: Clip.hardEdge,
-                child: LinearProgressIndicator(
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+                child: const LinearProgressIndicator(
                   value: 0.3,
                   semanticsLabel: 'Current points',
                   minHeight: 8,
                 ),
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
               ),
             ),
           ],
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
+          padding: const EdgeInsets.only(top: 8, bottom: 8),
           child: Container(
             height: 1,
             decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
@@ -78,10 +78,10 @@ class AccountStatus extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
+             const Text(
               'This month you spent \$1500.00 on narguinhas. Try to make it lower!',
             ),
-            TextButton(onPressed: () => {}, child: Text('Tell me more')),
+            TextButton(onPressed: () => {}, child: const Text('Tell me more')),
           ],
         ),
       ],

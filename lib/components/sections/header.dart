@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
@@ -8,7 +6,7 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(bottomLeft: Radius.circular(8), bottomRight: Radius.circular(8)),
         gradient: LinearGradient(
           begin: Alignment.topCenter,
@@ -21,10 +19,10 @@ class Header extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(top: 88, left: 16, right: 16, bottom: 16),
+        padding: const EdgeInsets.fromLTRB(16, 88, 16, 16),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: [
+          children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -34,13 +32,17 @@ class Header extends StatelessWidget {
                   children: <Widget>[
                     Text.rich(TextSpan(
                         text: '\$',
-                        children: <TextSpan>[TextSpan(text: '1000.00', style: Theme.of(context).textTheme.bodyLarge)],
+                        children: <TextSpan>[
+                          TextSpan(
+                              text: '1000.00',
+                              style: Theme.of(context).textTheme.bodyLarge)
+                        ],
                       ),
                     ),
-                    Text('Available balance'),
+                    const Text('Available balance'),
                   ],
                 ),
-                Icon(
+                const Icon(
                   Icons.account_circle,
                   size: 42,
                 ),

@@ -19,7 +19,7 @@ class ActionsSection extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const <Widget>[
                     BoxCard(
                       boxCardBody:
                           Activity(
