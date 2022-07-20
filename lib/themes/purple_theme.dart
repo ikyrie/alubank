@@ -12,4 +12,5 @@ ThemeData purpleTheme = ThemeData(
     bodyMedium: TextStyle(fontSize: 16),
     bodyLarge: TextStyle(fontSize: 28),
   ),
+  fontFamily: 'Raleway',
 );
