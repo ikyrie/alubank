@@ -1,3 +1,4 @@
+import 'package:estilizacao_componentes/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
 class AccountStatus extends StatelessWidget {
@@ -15,7 +16,7 @@ class AccountStatus extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(right: 8.0),
-                  child: Container(height: 10, width: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: Colors.yellow[800]),),
+                  child: Container(height: 10, width: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: ThemeColors.transactions['spent']),),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +34,7 @@ class AccountStatus extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(right: 8.0),
-                  child: Container(height: 10, width: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: Colors.purple[400]),),
+                  child: Container(height: 10, width: 10, decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: ThemeColors.transactions['earned']),),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

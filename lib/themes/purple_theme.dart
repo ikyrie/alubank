@@ -1,13 +1,12 @@
 import 'package:estilizacao_componentes/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
-const MaterialColor _mainColor = ThemeColors.primary;
 
 ThemeData purpleTheme = ThemeData(
-  primaryColor: _mainColor,
+  primaryColor: ThemeColors.primary,
   colorScheme: ColorScheme.fromSwatch(
-    primarySwatch: _mainColor,
-    brightness: Brightness.light,
+    primarySwatch: ThemeColors.primary,
+    brightness: Brightness.dark,
   ),
   textTheme: const TextTheme(
     bodyMedium: TextStyle(fontSize: 16),

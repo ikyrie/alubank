@@ -1,3 +1,4 @@
+import 'package:estilizacao_componentes/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
 class AccountPoints extends StatelessWidget {
@@ -23,7 +24,7 @@ class AccountPoints extends StatelessWidget {
           padding: const EdgeInsets.only(top: 8, bottom: 8),
           child: Container(
             height: 1,
-            decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
+            decoration: BoxDecoration(border: Border.all(color: ThemeColors.division)),
           ),
         ),
         Padding(
@@ -41,7 +42,7 @@ class AccountPoints extends StatelessWidget {
                   height: 8,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.pink,
+                    color: ThemeColors.milestones['delivery'],
                   ),
                 ),
               ),
@@ -58,7 +59,7 @@ class AccountPoints extends StatelessWidget {
                 height: 8,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                  color: Colors.indigo,
+                  color: ThemeColors.milestones['streaming'],
                 ),
               ),
             ),
