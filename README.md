@@ -1,16 +1,16 @@
-# estilizacao_componentes
+# 🏦 Projeto Alubank
+![Screen Shot 2022-07-21 at 17 34 11](https://user-images.githubusercontent.com/22684176/180311121-619bd614-b439-4177-ae2c-9b9d79368002.png)
 
-A new Flutter project.
+Projeto criado em Flutter para testar e mostrar a capacidade do Flutter de criar layouts únicos e customizados.
 
-## Getting Started
+## 💻 O que você precisa para rodar o projeto
 
-This project is a starting point for a Flutter application.
+O projeto foi montado na versão 3.05 do Flutter, então por questões de compatibilidade é recomendado subir o projeto nesta mesma versão.
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter na versão 3.05
+- Alguma IDE (ex: VSCode, Intellij, Android Studio, etc...) configurada para utilizar o Flutter
+- Algum dispositivo (virtual ou físico) para testar/subir a aplicação
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ➕ Mais informações ++
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Confira a formação Flutter na plataforma da Alura
