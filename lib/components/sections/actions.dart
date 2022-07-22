@@ -19,30 +19,39 @@ class ActionsSection extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const <Widget>[
-                    BoxCard(
-                      boxCardBody:
-                          Activity(
-                          mainIcon: Icon(
-                            Icons.account_balance_wallet,
-                          ),
-                          cardTitle: 'Deposit'),
+                  children: <Widget>[
+                    InkWell(
+                      onTap: () => {},
+                      child: const BoxCard(
+                        boxCardBody:
+                            Activity(
+                            mainIcon: Icon(
+                              Icons.account_balance_wallet,
+                            ),
+                            cardTitle: 'Deposit'),
+                      ),
                     ),
-                    BoxCard(
-                      boxCardBody:
-                          Activity(
-                          mainIcon: Icon(
-                            Icons.cached,
-                          ),
-                          cardTitle: 'Transfer'),
+                    InkWell(
+                      onTap: () => {},
+                      child: const BoxCard(
+                        boxCardBody:
+                            Activity(
+                            mainIcon: Icon(
+                              Icons.cached,
+                            ),
+                            cardTitle: 'Transfer'),
+                      ),
                     ),
-                    BoxCard(
-                      boxCardBody:
-                          Activity(
-                          mainIcon: Icon(
-                            Icons.center_focus_strong,
-                          ),
-                          cardTitle: 'Scan'),
+                    InkWell(
+                      onTap: () => {},
+                      child: const BoxCard(
+                        boxCardBody:
+                            Activity(
+                            mainIcon: Icon(
+                              Icons.center_focus_strong,
+                            ),
+                            cardTitle: 'Scan'),
+                      ),
                     ),
                   ],
                 ),
